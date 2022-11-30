@@ -10,13 +10,13 @@
           <a class="nav-link active" aria-current="page" href="/">Bosh sahifa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.php">Biz haqimizda</a>
+          <a class="nav-link" href="../about.php">Biz haqimizda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="blog.php">Blog</a>
+          <a class="nav-link" href="../blog.php">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="prices.php">Narxlar</a>
+          <a class="nav-link" href="../prices.php">Narxlar</a>
         </li>
       </ul>
       <form class="d-flex" role="search">

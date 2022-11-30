@@ -3,52 +3,53 @@ $title = "Bosh Sahifa";
 require "includes/header.php"
 ?>
 
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="#777" />
-      </svg>
 
+    <div class="carousel-item active">
+      <div class="card w-100">
+        <img class="card-img-top" src="https://fancycrave.com/wp-content/uploads/2019/12/Free-Nature-Pictures-min.jpg" alt="Nature-Image">
+      </div>
       <div class="container">
         <div class="carousel-caption text-start">
-          <h1>Example headline.</h1>
-          <p>Some representative placeholder content for the first slide of the carousel.</p>
+          <h1>Nature headline.</h1>
+          <p>Free Nature Pictures That Showcase The Beauty of Mother Earth | Fancycrave</p>
           <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
         </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="#777" />
-      </svg>
 
+    <div class="carousel-item">
+      <div class="card w-100">
+        <img class="card-img-top" src="https://thumbor.thedailymeal.com/WG-OXw7dg_OHCBh-TlPHSTB7sfs=/870x565/https://www.theactivetimes.com/sites/default/files/slideshows/102277/114608/3_boydhendrikse_istock_getty_images.jpg" alt="Nature-Image">
+      </div>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Another example headline.</h1>
+          <h1>Another nature headline.</h1>
           <p>Some representative placeholder content for the second slide of the carousel.</p>
           <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
         </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="#777" />
-      </svg>
 
+    <div class="carousel-item">
+      <div class="card w-100">
+        <img class="card-img-top" src="https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=" alt="Nature-Image">
+      </div>
       <div class="container">
         <div class="carousel-caption text-end">
           <h1>One more for good measure.</h1>
-          <p>Some representative placeholder content for the third slide of this carousel.</p>
+          <p>Nature Stock Photos, Pictures & Royalty-Free Images - iStock</p>
           <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
         </div>
       </div>
     </div>
+
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -60,47 +61,42 @@ require "includes/header.php"
   </button>
 </div>
 
-
-<!-- Marketing messaging and featurettes
-  ================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
-
 <div class="container marketing">
 
   <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-      </svg>
+      <div class="card border-0">
+        <img class="card-img-top rounded-circle" src="https://www.ryadel.com/wp-content/uploads/2015/06/php-logo.png" alt="PHP-Image">
+      </div>
 
       <h2 class="fw-normal">Heading</h2>
       <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
       <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
+
     <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
         <title>Placeholder</title>
         <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-      </svg>
-
+      </svg> -->
+      <div class="card mx-auto w-50 border-0">
+        <img class="card-img-top rounded-circle" width="200" height="200" src="https://pngimg.com/uploads/mysql/mysql_PNG18.png" alt="PHP-Image">
+      </div>
       <h2 class="fw-normal">Heading</h2>
       <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
       <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-      </svg>
 
+    <div class="col-lg-4">
+      <div class="card border-0">
+        <img class="card-img-top rounded-circle" src="https://wirebox.co.uk/wp-content/themes/wirebox/assets/img/logos/laravel-certified-company-badge.png" alt="PHP-Image">
+      </div>
       <h2 class="fw-normal">Heading</h2>
       <p>And lastly this, the third column of representative placeholder content.</p>
       <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
-
 
   <!-- START THE FEATURETTES -->
 
@@ -112,11 +108,9 @@ require "includes/header.php"
       <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
     </div>
     <div class="col-md-5">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-      </svg>
-
+      <div class="card border-0">
+        <img class="featurette-image img-fluid mx-auto" src="https://hightouchtechnologies.com/wp-content/uploads/images/services/it-solutions/it-solutions-cloud.png" alt="">
+      </div>
     </div>
   </div>
 
