@@ -8,6 +8,17 @@ require "../func/db.php";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $title = $_POST['title'];
   $body = $_POST['body'];
+
+  $statement = $pdo->prepare("INSERT INTO posts (title, body)
+  VALUES (:title, :body)");
+
+  $statement->execute([
+    'title' => $title,
+    'body' => $body
+  ]);
+
+  $_SESSION["new-post"] = "Yangi Post Qo'shildi";
+  header("Location: ../blog.php");
 }
 
 ?>

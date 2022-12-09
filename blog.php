@@ -1,9 +1,18 @@
 <?php
 $title = "Blog";
-require "includes/header.php"
+require "includes/header.php";
+
 ?>
 
 <section class="py-5 text-center container">
+
+  <?php if (isset($_SESSION["new-post"])) : ?>
+    <div class="alert alert-success" role="alert">
+      Yangi Post Qo'shildi
+      <?php unset($_SESSION["new-post"]) ?>
+    </div>
+  <?php endif; ?>
+
   <div class="row py-lg-5">
     <div class="col-lg-6 col-md-8 mx-auto">
       <h1 class="fw-light">Bizni Blog</h1>
