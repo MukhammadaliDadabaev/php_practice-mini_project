@@ -9,6 +9,17 @@ $statement->execute();
 
 $posts = $statement->fetchAll();
 
+if ($_SERVER["REQUEST_METHOD"] == 'POST' && isset($_POST["DELETE"])) {
+
+  $id = $_POST['post_id'];
+
+  $stmt = $pdo->prepare("DELETE FROM posts WHERE id = ?");
+  $stmt->execute([$id]);
+
+  header('Location: blog.php');
+  exit;
+}
+
 ?>
 
 <section class="py-5 text-center container">
@@ -47,12 +58,17 @@ $posts = $statement->fetchAll();
             <div class="card-body">
               <h3><?= $post['title'] ?></h3>
               <p class="card-text"><?= $post['body'] ?></p>
+              <small class="text-muted"><b><?= $post['create_at'] ?></b></small>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a href="./models/post_all.php?id=<?= $post['id'] ?>" class="btn btn-sm btn-outline-primary">View</a>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="./models/post_edit.php?id=<?= $post['id'] ?>" class="btn btn-sm btn-outline-secondary">Edit</a>
+                  <form action="" method="POST" onsubmit="return confirm('POST UCHIRILYAPTI...')">
+                    <input type="hidden" name="post_id" value="<?= $post['id'] ?>">
+                    <input type="hidden" name="DELETE">
+                    <button type="submit" class="btn btn-sm btn-outline-danger ml-5">Delete</button>
+                  </form>
                 </div>
-                <small class="text-muted"><?= $post['create_at'] ?></small>
               </div>
             </div>
           </div>
